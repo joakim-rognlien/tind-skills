@@ -1,0 +1,662 @@
+{
+  "bygget": "2026-11-17",
+  "antall": 13,
+  "plattformer": [
+    {
+      "id": "claude-cowork",
+      "navn": "Claude Cowork",
+      "installer": [
+        "Åpne Claude og gå til Customize (Tilpass), deretter fanen Skills (Ferdigheter).",
+        "Klikk Add og velg zip-fila du lastet ned.",
+        "Skru skillen på i samme liste.",
+        "Skriv en melding som handler om oppgaven. Claude henter skillen selv når den passer.",
+        "Står menyen på et annet språk enn her, er det samme sted. Grensesnittet oversettes, funksjonen er den samme."
+      ]
+    },
+    {
+      "id": "copilot-cowork",
+      "navn": "Microsoft Copilot Cowork",
+      "installer": [
+        "Åpne Copilot Cowork og gå til Customize (Tilpass), deretter fanen Skills (Ferdigheter).",
+        "Klikk pila ved siden av Add og velg Upload skill. Dialogen tar imot .MD, .ZIP eller .SKILL.",
+        "Velg md-fila du lastet ned. Copilot tar imot en enkelt SKILL.md på inntil 1 MB.",
+        "Nevn skillen ved navn i meldingen din. Copilot henter den ikke fram av seg selv slik Claude og ChatGPT gjør.",
+        "Vil du dele den med kolleger, åpne skillen og bruk Share."
+      ]
+    },
+    {
+      "id": "chatgpt-work",
+      "navn": "ChatGPT Work",
+      "installer": [
+        "Åpne ChatGPT og gå til Programtillegg (Plugins), deretter fanen Ferdigheter (Skills).",
+        "Klikk pluss-knappen og velg «Last opp fra datamaskinen din» (Upload from your computer).",
+        "Velg md-fila du lastet ned.",
+        "Skriv en melding som handler om oppgaven. ChatGPT henter ferdigheten selv når den passer."
+      ]
+    }
+  ],
+  "kategorier": [
+    "Kom i gang",
+    "Ledelse og møter",
+    "Salg",
+    "Marked og innhold",
+    "Økonomi og administrasjon",
+    "Kundeservice",
+    "HR og folk"
+  ],
+  "oppskrifter": [
+    {
+      "slug": "din-egen-skrivestil",
+      "navn": "Din egen skrivestil",
+      "kategori": "Kom i gang",
+      "tilgang": "åpen",
+      "oppsummering": "Lager en stilprofil av tekster du allerede har sendt, slik at alt AI-en skriver for deg høres ut som deg og ikke som en robot.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Få AI til å skrive som deg selv",
+      "sokeord": "få AI til å skrive som deg",
+      "sporsmal_h2": "Hvordan får jeg AI til å skrive som meg?",
+      "side": {
+        "tittel": "Få AI til å skrive som deg selv | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Lager en stilprofil av tekster du allerede har sendt, slik at alt AI-en skriver for deg høres ut som deg og ikke som en robot.",
+        "ingress": "Den vanligste grunnen til at folk slutter å bruke AI til skriving er at resultatet ikke høres ut som dem. De bruker like lang tid på å skrive om som de ville brukt på å skrive selv.",
+        "hva_du_far": "Den vanligste grunnen til at folk slutter å bruke AI til skriving er at resultatet ikke høres ut som dem. De bruker like lang tid på å skrive om som de ville brukt på å skrive selv.\n\nDenne skillen løser det én gang. Du limer inn åtte tekster du har skrevet selv, og får tilbake en stilprofil: en beskrivelse av hvordan du faktisk skriver, som du legger inn i verktøyet og som gjelder for alt du skriver etterpå.",
+        "slik_bruker_du_den": "Finn åtte tekster du har skrevet selv og som du er fornøyd med. Blandet lengde og situasjon gir best resultat: to e-poster til en kunde, to interne meldinger, et lengre notat, en beskjed du sendte da du var stresset, noe du skrev til en du kjenner godt, og noe formelt.\n\nIkke rens dem. Skrivefeil, halve setninger og rare uttrykk er nettopp det som gjør profilen din til din.\n\nLim dem inn og be om stilprofilen. Legg svaret inn som fast instruks i verktøyet, så gjelder det videre.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hva skal profilen brukes til framover: kundemail, interne meldinger, tilbud, innlegg, eller alt sammen? (styrer hvilke situasjoner profilen må dekke, og dermed hvilke tekster jeg sier fra at du mangler)\n2. Er alle tekstene du har limt inn skrevet av deg selv, og er det minst seks av dem? (styrer om det i det hele tatt er grunnlag for en profil)\n\nEr svaret på spørsmål to nei, sier du det med en gang: under seks tekster gir en profil som er en gjetning, og tekster skrevet av andre gjør profilen til deres, ikke din. Be om flere. Vil brukeren likevel gå videre, lager du profilen, men merker den tydelig som foreløpig og sier hvor mange tekster som mangler.\n\n**Nyttig, men ikke påkrevd:**\n\n3. Hva slags virksomhet jobber du i, og hva er rollen din? (styrer hvilke fagord som er naturlige for deg)\n4. Er det noe ved din egen skriving du er misfornøyd med? (styrer hvilke vaner profilen skal rette opp i stedet for å låse fast)\n5. Har dere en språkprofil eller merkevarestemme fra før? (styrer rammen profilen må holde seg innenfor)",
+        "eksempel_input": "Tre e-poster du allerede har sendt, limt rett inn:\n\n\"Hei Marit. Takk for i går. Jeg har sett på tallene du sendte, og jeg tror vi\nbommer på lageret, ikke på ruta. Skal vi ta en halvtime torsdag? Joakim\"\n\n\"Hei igjen. Kort svar: ja, det går. Men da må vi flytte oppstart to uker.\nSi fra om det er greit, så booker jeg folk.\"\n\n\"Beklager sent svar, har vært på farten. Det korte er at vi ikke rekker\nnovember. Det lange tar vi på telefon i morgen tidlig hvis det passer.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hvorfor holder det ikke å be AI-en skrive «uformelt»?",
+            "svar": "Fordi uformelt betyr noe ulikt for alle. Skrivestilen din ligger i konkrete valg: at du åpner med saken og ikke med høflighetsfraser, at du bruker punktum der andre bruker komma, at du skriver «kort svar: ja». En profil bygget av tekster du faktisk har sendt fanger de valgene. Et adjektiv gjør det ikke."
+          },
+          {
+            "sporsmal": "Hvor mange tekster trenger jeg for at det skal bli bra?",
+            "svar": "Fem til ti tekster fra samme type situasjon holder. Femti tekster fra ti ulike situasjoner er verre, fordi profilen da blir et gjennomsnitt av flere stemmer. Skillen sier fra hvis materialet du gir den er for tynt eller for sprikende, i stedet for å gjette."
+          }
+        ],
+        "slik_ser_resultatet_ut": "Et dokument med tre deler:\n\n1. Stilprofil, 10 til 15 punkter formulert som instruksjoner, hvert med et sitat som belegg.\n2. Ordbank: uttrykk som skal brukes, og uttrykk som skal unngås.\n3. Tre før-og-etter-eksempler.\n\nUnder det, en kort liste over hva profilen er usikker på.",
+        "det_den_ikke_gjor": "Den kan ikke gjette hvordan du skriver i situasjoner du ikke har gitt eksempler fra. Skal AI-en skrive salgsmail og du bare har gitt interne meldinger, blir treffet dårlig.\n\nDen erstatter ikke gjennomlesing. En stilprofil gjør utkastet ditt, ikke ferdig."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er åtte tekster jeg har skrevet selv. Lag stilprofilen min.",
+        "copilot-cowork": "Bruk skillen ‹Din egen skrivestil›. Her er åtte tekster jeg har skrevet selv. Lag stilprofilen min.",
+        "chatgpt-work": "Her er åtte tekster jeg har skrevet selv. Lag stilprofilen min."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/din-egen-skrivestil.zip",
+        "copilot-cowork": "copilot-cowork/din-egen-skrivestil.md",
+        "chatgpt-work": "chatgpt-work/din-egen-skrivestil.md"
+      }
+    },
+    {
+      "slug": "motereferat-mal",
+      "navn": "Fra møtenotat til beslutninger",
+      "kategori": "Ledelse og møter",
+      "tilgang": "åpen",
+      "oppsummering": "Gjør rot av møtenotater eller en transkripsjon om til et referat som skiller mellom hva som ble bestemt og hva som bare ble sagt.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork"
+      ],
+      "sidetittel": "Møtereferat-mal med AI: beslutninger først",
+      "sokeord": "møtereferat mal",
+      "sporsmal_h2": "Hvordan skriver jeg et møtereferat med AI?",
+      "side": {
+        "tittel": "Møtereferat-mal med AI: beslutninger først | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Gjør rot av møtenotater eller en transkripsjon om til et referat som skiller mellom hva som ble bestemt og hva som bare ble sagt.",
+        "ingress": "De fleste møtereferater er en gjengivelse av samtalen. Da må alle lese hele for å finne ut hva de skal gjøre, og halvparten gjør det ikke.",
+        "hva_du_far": "De fleste møtereferater er en gjengivelse av samtalen. Da må alle lese hele for å finne ut hva de skal gjøre, og halvparten gjør det ikke.\n\nDenne skillen snur det. Den plasserer beslutningene øverst, med navn og frist, og skiller tydelig mellom det som ble bestemt, det som ble diskutert uten konklusjon, og det som bare ble nevnt. Den sier også hva som ikke ble avklart, som er den delen folk oftest oppdager for sent.",
+        "slik_bruker_du_den": "Lim inn det du har. Stikkord er nok, transkripsjon fungerer også. Ta med hvem som var til stede hvis det ikke går fram av teksten.\n\nGå gjennom «Uavklart»-lista til slutt. Den er poenget med hele referatet.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hvem i møtet kan faktisk bestemme? (styrer hva som føres som beslutning og hva som er et forslag. Uten dette gjør du et innspill om til et vedtak)\n2. Hvis notatene mangler navn eller bruker initialer: hvem er hvem? (styrer om ansvar kan fordeles i det hele tatt)\n\n**Nyttig, men ikke påkrevd:**\n\n3. Hvem skal lese referatet? (styrer hvor mye bakgrunn som må med)\n4. Har dere en fast referatmal? (styrer overskriftene, ellers bruker jeg malen under)\n5. Hvor lang tid går det før dere følger opp? (styrer hvor eksplisitt fristene må skrives)",
+        "eksempel_input": "Notatene slik de faktisk ser ut etter et møte:\n\nDriftsmøte torsdag\nTil stede: KL, MB, TS, ei til fra lager (rakk ikke å få med navnet)\n\n- KL åpnet med at leveringspresisjonen har falt til 89 prosent, må opp\n- MB mener det er ruteplanleggingen, TS mener det er lasting om morgenen\n- Ble enige om at noen må gå gjennom morgenrutinen og komme tilbake med forslag\n- TS: vi må ha flere traller, ellers hjelper det ikke uansett\n- KL: vi har ikke råd til traller før nyttår. TS var tydelig uenig\n- MB tar en prat med de tre sjåførene med flest avvik, i løpet av høsten\n- Ny kundeportal ble nevnt, ingen fulgte opp\n- Noen må sjekke om avtalen med underleverandøren går ut i november, ingen tok den",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hva gjør den hvis notatene mine er veldig rotete?",
+            "svar": "Rot er normaltilfellet, og den er bygget for det. Det den ikke gjør, er å fylle hullene. Står det ikke hvem som skal gjøre noe, skriver den «ansvarlig ikke avklart» og gjentar punktet under Uavklart. Et referat som ser komplett ut, men som har gjettet på ansvarlig, er farligere enn et som innrømmer hullet."
+          },
+          {
+            "sporsmal": "Kan jeg bruke den på en transkripsjon fra Teams eller Zoom?",
+            "svar": "Ja, og den fungerer ofte bedre på en transkripsjon enn på stikkord, fordi den ser hvem som sa hva og om noen protesterte. Det er den siste biten den bruker til å legge inn en egen Uenighet-linje under en beslutning, som er det som oftest kommer tilbake senere."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    Møte: [tema], [dato]\n    Til stede: [navn]\n\n    BESLUTNINGER\n    1. [Handling] · [ansvarlig] · [frist]\n       Uenighet: [bare hvis noen var imot]\n\n    DISKUTERT, IKKE BESTEMT\n    - [tema]: [posisjonene som kom fram]\n\n    UAVKLART, MÅ FØLGES OPP\n    - [spørsmål som står igjen]\n\n    NEVNT\n    - [stikkord]",
+        "det_den_ikke_gjor": "Den kan ikke vite hva som ble sagt utenfor notatene. Er notatene tynne, blir referatet tynt, og da sier den fra i stedet for å fylle inn.\n\nDen avgjør ikke om en beslutning var klok."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er notatene fra møtet. Lag referat.",
+        "copilot-cowork": "Bruk skillen ‹Fra møtenotat til beslutninger›. Her er notatene fra møtet. Lag referat.",
+        "chatgpt-work": "Her er notatene fra møtet. Lag referat."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/motereferat-mal.zip",
+        "copilot-cowork": "copilot-cowork/motereferat-mal.md",
+        "chatgpt-work": "chatgpt-work/motereferat-mal.md"
+      }
+    },
+    {
+      "slug": "moteforberedelse",
+      "navn": "Møteforberedelse på ti minutter",
+      "kategori": "Salg",
+      "tilgang": "åpen",
+      "oppsummering": "Gjør nettsiden og tidligere e-poster om til en agenda med hypoteser, spørsmål og det du bør sjekke før du går inn i møtet.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Forbered kundemøtet på ti minutter",
+      "sokeord": "forberede kundemøte",
+      "sporsmal_h2": "Hvordan forbereder jeg meg til et kundemøte med AI?",
+      "side": {
+        "tittel": "Forbered kundemøtet på ti minutter | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Gjør nettsiden og tidligere e-poster om til en agenda med hypoteser, spørsmål og det du bør sjekke før du går inn i møtet.",
+        "ingress": "De fleste møteforberedelser blir enten hoppet over eller til en halvtime med googling som gir lite. Denne skillen gir deg noe å gå inn med: en hypotese om hva de sliter med, tre spørsmål som er verdt å stille, og de tingene du bør ha sjekket for ikke å bli tatt på senga.",
+        "hva_du_far": "De fleste møteforberedelser blir enten hoppet over eller til en halvtime med googling som gir lite. Denne skillen gir deg noe å gå inn med: en hypotese om hva de sliter med, tre spørsmål som er verdt å stille, og de tingene du bør ha sjekket for ikke å bli tatt på senga.\n\nDen holder også hypotese og faktum fra hverandre, slik at du ikke går inn i møtet og påstår noe du egentlig bare har gjettet.",
+        "slik_bruker_du_den": "Lim inn det du har: lenken til nettsiden deres, tidligere e-poster, notater fra forrige møte, siste årsrapport hvis du har den. Si hvem du skal møte og hva slags møte det er.\n\nBruk spørsmålene som utgangspunkt, ikke manus. Poenget er å ha tenkt før du går inn.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hva selger eller leverer dere, og til hvem? (styrer samtlige hypoteser. Uten dette gjetter jeg, og gjetningen blir synlig i møtet)\n2. Hva er målet med akkurat dette møtet: første kontakt, behovsavklaring, forhandling eller oppfølging? (styrer hvilke spørsmål som er verdt å bruke tid på)\n3. Hva har du om selskapet du skal møte? Nettsiden, tidligere e-poster, notater fra sist, en årsrapport, eller bare navnet? (styrer om jeg kan lage hypoteser i det hele tatt) **Har du bare navnet, og jeg ikke kan søke på nett, sier jeg det med en gang.** Da lager jeg spørsmålene og forberedelseslista, men ingen hypoteser, og du får en liste over hva du bør finne selv på fem minutter.\n\n**Nyttig, men ikke påkrevd:**\n\n4. Hvem skal du møte, og hva vet du om rollen deres? (styrer hvem spørsmålene rettes mot)\n5. Hva kan dere ikke eller vil dere ikke levere? (styrer hva jeg holder meg unna å foreslå i «dette bør du ikke si»)\n6. Hva er innvendingen dere møter oftest? (styrer forberedelsen på motstand)",
+        "eksempel_input": "Det du har liggende før møtet, uten å lete lenge:\n\nNettadressen til selskapet: nordviktransport.no\nSiste e-post fra dem:\n\n\"Hei. Takk for praten på messa. Vi ser på om vi skal gjøre noe med\nruteplanleggingen til neste år, men budsjettet er ikke satt ennå.\nKan vi ta en prat i september? Mvh Kari, logistikksjef\"\n\nDet jeg vet fra før: de kjøpte et nytt lagersystem i fjor, og de har\nklaget på leveringspresisjon på LinkedIn.",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hva om jeg ikke har noe materiale om selskapet?",
+            "svar": "Da utelater den hypotesene helt i stedet for å finne på noen. Det er et bevisst valg: en hypotese uten holdepunkt blir synlig i møtet, og det koster deg mer enn å møte uforberedt på det punktet. Du får fortsatt spørsmålene og sjekklista."
+          },
+          {
+            "sporsmal": "Er ikke dette bare research jeg kunne gjort selv?",
+            "svar": "Jo, og det er poenget. Forskjellen er at den gjør det på ti minutter i stedet for førti, og at den tvinger fram tre spørsmål og en liste over hva du ikke bør si. Den siste delen er den folk hopper over når de gjør det selv."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    SELSKAPET PÅ TRE LINJER (utelates helt hvis du ikke har materiale)\n    HVA SOM ER I BEVEGELSE (samme)\n    HYPOTESER (2-3, hver med holdepunkt. Utelates helt hvis du ikke har materiale)\n    TRE SPØRSMÅL Å STILLE\n    DETTE BØR DU IKKE SI (utelates helt hvis du ikke har materiale)\n    STATUS I DIALOGEN (hvis e-poster er gitt)\n    MÅ SJEKKES FØR MØTET",
+        "det_den_ikke_gjor": "Den har ikke tilgang til noe du ikke gir den, med mindre verktøyet ditt kan søke på nett. Uten materiale blir hypotesene generiske, og da skal den si fra.\n\nDen lager ikke et tilbud, og den vet ikke hva selskapet har råd til."
+      },
+      "startprompt": {
+        "claude-cowork": "Jeg skal i møte med dette selskapet. Her er nettsiden og e-postene våre så langt.",
+        "copilot-cowork": "Bruk skillen ‹Møteforberedelse på ti minutter›. Jeg skal i møte med dette selskapet. Her er nettsiden og e-postene våre så langt.",
+        "chatgpt-work": "Jeg skal i møte med dette selskapet. Her er nettsiden og e-postene våre så langt."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/moteforberedelse.zip",
+        "copilot-cowork": "copilot-cowork/moteforberedelse.md",
+        "chatgpt-work": "chatgpt-work/moteforberedelse.md"
+      }
+    },
+    {
+      "slug": "tekstkritikeren",
+      "navn": "Tekstkritikeren",
+      "kategori": "Marked og innhold",
+      "tilgang": "e-post",
+      "oppsummering": "Gir ærlig motstand på teksten din i stedet for ros, og peker på floskler, uklare påstander og det leseren faktisk lurer på.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Ærlig tilbakemelding på teksten din",
+      "sokeord": "tilbakemelding på tekst",
+      "sporsmal_h2": "Hvordan får jeg ærlig tilbakemelding på en tekst fra AI?",
+      "side": {
+        "tittel": "Ærlig tilbakemelding på teksten din | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Gir ærlig motstand på teksten din i stedet for ros, og peker på floskler, uklare påstander og det leseren faktisk lurer på.",
+        "ingress": "Ber du en AI om tilbakemelding på en tekst, får du som regel ros med noen høflige forslag på slutten. Det er ubrukelig, og verre enn ingenting, fordi det bekrefter en tekst som ikke er god nok.",
+        "hva_du_far": "Ber du en AI om tilbakemelding på en tekst, får du som regel ros med noen høflige forslag på slutten. Det er ubrukelig, og verre enn ingenting, fordi det bekrefter en tekst som ikke er god nok.\n\nDenne skillen snur innstillingen. Den leser teksten som en skeptisk leser med dårlig tid, sier hvor den ville sluttet å lese, og peker på setninger som ser ut som innhold uten å være det.",
+        "slik_bruker_du_den": "Lim inn teksten og si hvem den er skrevet for og hva den skal oppnå. Uten det blir kritikken generell.\n\nTa det som kommer. Er du uenig, si det og be om begrunnelse. Den skal kunne forsvare seg.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hvem er teksten skrevet for? Ikke «kunder», men hvilken rolle i hva slags virksomhet. (styrer hele standarden jeg måler teksten mot)\n2. Hva skal leseren gjøre eller tenke etterpå? (styrer vurderingen av oppfordringen, og av hva som mangler)\n3. Hvor skal teksten stå: nettside, e-post, annonse, presentasjon, søknad? (styrer lengde, tone og hva som er en rimelig forventning)\n\n**Nyttig, men ikke påkrevd:**\n\n4. Hva vet leseren om dere fra før? (styrer hvor mye bakgrunn teksten må ha med)\n5. Er det noe som må stå der av juridiske eller interne grunner? (styrer hva jeg ikke foreslår å fjerne)",
+        "eksempel_input": "Et avsnitt fra en tekst du har skrevet, limt rett inn:\n\n\"Vi er et fremoverlent selskap som brenner for å skape verdi for våre kunder\ngjennom innovative og skreddersydde løsninger. Med lang erfaring og et\ndedikert team leverer vi kvalitet i alle ledd. Ta kontakt for en uforpliktende\nprat om hvordan vi kan hjelpe akkurat din bedrift.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Blir den ikke bare unødvendig streng?",
+            "svar": "Den er streng med vilje, fordi alternativet er ubrukelig. En AI som sier at teksten din er god, har gitt deg null informasjon. Den peker på sitater og sier hva som er galt med akkurat den setningen, slik at du kan være uenig i en konkret ting i stedet for i en karakter."
+          },
+          {
+            "sporsmal": "Skriver den om teksten for meg?",
+            "svar": "Bare tre steder, som eksempler. Resten peker den på og lar deg fikse selv. Det er en bevisst begrensning: en tekst som er skrevet om i sin helhet av AI høres ut som AI, og da har du byttet ett problem mot et annet."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    HER SLUTTET JEG Å LESE\n    [sitat og hvorfor]\n\n    MÅ RETTES\n    1. [sitat] · [hva som er galt]\n\n    BØR RETTES\n    - [sitat] · [hva som er galt]\n\n    SPØRSMÅL TEKSTEN IKKE SVARER PÅ\n    1.\n\n    OPPFORDRINGEN\n    [er det tydelig hva leseren skal gjøre, og kommer grunnen før oppfordringen]\n\n    TRE OMSKRIVINGER\n    Før: / Etter:",
+        "det_den_ikke_gjor": "Den vet ikke om påstandene dine er sanne, bare om de er underbygget i teksten.\n\nDen er ikke en korrekturleser. Be om det separat hvis du trenger språkvask."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er teksten min. Vær kritisk.",
+        "copilot-cowork": "Bruk skillen ‹Tekstkritikeren›. Her er teksten min. Vær kritisk.",
+        "chatgpt-work": "Her er teksten min. Vær kritisk."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/tekstkritikeren.zip",
+        "copilot-cowork": "copilot-cowork/tekstkritikeren.md",
+        "chatgpt-work": "chatgpt-work/tekstkritikeren.md"
+      }
+    },
+    {
+      "slug": "manedsrapport-forklart",
+      "navn": "Månedstallene i klartekst",
+      "kategori": "Økonomi og administrasjon",
+      "tilgang": "e-post",
+      "oppsummering": "Gjør resultatrapporten om til fem setninger ledergruppa forstår, med avvikene først og forslag til hva som bør sjekkes.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork"
+      ],
+      "sidetittel": "Månedsrapporten forklart for ledergruppa",
+      "sokeord": "månedsrapport forklart",
+      "sporsmal_h2": "Hvordan forklarer jeg månedstallene for ledergruppa?",
+      "side": {
+        "tittel": "Månedsrapporten forklart for ledergruppa | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Gjør resultatrapporten om til fem setninger ledergruppa forstår, med avvikene først og forslag til hva som bør sjekkes.",
+        "ingress": "Regnskapsrapporten er laget for regnskapsføreren. Ledergruppa trenger å vite tre ting: gikk det bedre eller dårligere enn ventet, hvorfor, og hva bør vi gjøre med det.",
+        "hva_du_far": "Regnskapsrapporten er laget for regnskapsføreren. Ledergruppa trenger å vite tre ting: gikk det bedre eller dårligere enn ventet, hvorfor, og hva bør vi gjøre med det.\n\nDenne skillen gjør den oversettelsen. Den finner avvikene som faktisk betyr noe, forklarer dem uten fagspråk, og lister opp hva som bør sjekkes før tallene brukes til å bestemme noe.",
+        "slik_bruker_du_den": "Lim inn tallene. Resultatrapport, hovedbokutdrag eller et regneark fungerer. Ta med forrige måned eller budsjettet hvis du har det, ellers har den ingenting å sammenligne med.\n\nSi hvem som skal lese det. En styreleder og en avdelingsleder trenger ikke det samme.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Er tallene i kroner eller i tusen kroner? Sjekk overskrift, kolonnetittel og bunntekst i rapporten. (styrer hvert eneste beløp. Feil her gir et direkte galt tall i en e-post til ledergruppa)\n2. Hvordan tjener dere penger: varehandel, timesalg, abonnement, prosjekt? (styrer hvilke poster som er vesentlige. En varekostnad betyr noe helt annet i et timeselskap enn i en butikk)\n3. Skal jeg måle mot budsjett eller mot forrige periode? Har du begge, si det. (styrer hvert avvik i hele rapporten)\n\n**Nyttig, men ikke påkrevd:**\n\n4. Hvem skal lese sammendraget? (styrer detaljnivå og hvor mye som må forklares)\n5. Er det noe dere allerede vet forklarer månedens tall? (styrer hva jeg slipper å foreslå som mulig forklaring)\n6. Hvilke poster følger dere tettest? (styrer rekkefølgen når flere avvik er like store)",
+        "eksempel_input": "Tallene slik de kommer ut av regnskapssystemet:\n\nResultat august 2026 (tall i hele tusen)\n                    Faktisk   Budsjett   Avvik\nSalgsinntekt          4 210      4 500     -290\nVarekostnad           1 980      2 025      -45\nLønn                  1 640      1 580      +60\nAndre driftskostnader   612        480     +132\nDriftsresultat          -22        415     -437\n\nKommentar fra regnskapsfører: \"Husk at forsikringen for hele året\nble bokført i august i år, ikke i januar.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hvorfor spør den om tallene er i kroner eller tusen kroner?",
+            "svar": "Fordi det er den feilen som koster mest. Er den usikker og gjetter, kan den skrive at driftsresultatet er 22 kroner under budsjett i stedet for 22 000. Det er et tall som går rett inn i en e-post til ledergruppa, og du oppdager det først når noen spør."
+          },
+          {
+            "sporsmal": "Erstatter dette regnskapsføreren?",
+            "svar": "Nei. Den forklarer tall som allerede er ført, den fører dem ikke og den kontrollerer dem ikke. Der den ser noe som ser rart ut, skriver den «mulig forklaring, må bekreftes» i stedet for å slå det fast. Det er regnskapsføreren som bekrefter."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    GRUNNLAG\n    Periode: / Enhet: / Sammenlignet mot: / Hittil i år: [ja/nei]\n\n    SAMMENDRAG\n    [maks fem setninger, står alene]\n\n    DE STØRSTE AVVIKENE\n    1. [post]: [beløp] [over/under] [sammenligning]\n       Hva vi ser: [én setning]\n       Mulig forklaring, må bekreftes: [eller utelatt]\n\n    VERDT Å MERKE SEG\n    - [engangsposter, tomme poster, periodiseringer]\n\n    BØR SJEKKES ELLER BESLUTTES\n    1.",
+        "det_den_ikke_gjor": "Den er ikke revisor og ikke regnskapsfører. Den finner ikke feil i bokføringen, bare det som ser rart ut i tallene du limte inn.\n\nDen kan lese feil enhet hvis rapporten din ikke sier tydelig om tallene er i kroner eller tusen kroner. Sjekk grunnlagslinja øverst i svaret før du bruker tallene til noe.\n\nDen kan ikke vite hvorfor noe skjedde. Alle årsaker er forslag som må bekreftes av noen som var der."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er månedens resultatrapport. Forklar den i klartekst.",
+        "copilot-cowork": "Bruk skillen ‹Månedstallene i klartekst›. Her er månedens resultatrapport. Forklar den i klartekst.",
+        "chatgpt-work": "Her er månedens resultatrapport. Forklar den i klartekst."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/manedsrapport-forklart.zip",
+        "copilot-cowork": "copilot-cowork/manedsrapport-forklart.md",
+        "chatgpt-work": "chatgpt-work/manedsrapport-forklart.md"
+      }
+    },
+    {
+      "slug": "innlegg-til-sosiale-medier",
+      "navn": "Én sak, ti innlegg",
+      "kategori": "Marked og innhold",
+      "tilgang": "e-post",
+      "oppsummering": "Gjør én artikkel eller kundehistorie om til innlegg for flere kanaler, uten at alt høres likt ut.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Innlegg til sosiale medier fra én sak",
+      "sokeord": "innlegg til sosiale medier",
+      "sporsmal_h2": "Hvordan lager jeg flere innlegg av én sak?",
+      "side": {
+        "tittel": "Innlegg til sosiale medier fra én sak | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Gjør én artikkel eller kundehistorie om til innlegg for flere kanaler, uten at alt høres likt ut.",
+        "ingress": "Det vanlige er at én artikkel blir til én LinkedIn-post som er sammendraget av artikkelen, og så stopper det. Resten av innholdet blir aldri brukt.",
+        "hva_du_far": "Det vanlige er at én artikkel blir til én LinkedIn-post som er sammendraget av artikkelen, og så stopper det. Resten av innholdet blir aldri brukt.\n\nDenne skillen henter ut poengene som kan stå alene, og lager innlegg som er forskjellige fordi de sier forskjellige ting, ikke fordi de er formulert litt ulikt.",
+        "slik_bruker_du_den": "Lim inn artikkelen, kundehistorien eller rapporten. Si hvem du snakker til og hvilke kanaler du bruker.\n\nHar du en stilprofil fra «Din egen skrivestil», legg den inn først. Da høres innleggene ut som deg og ikke som markedsavdelingen.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hvilke kanaler bruker dere faktisk, og hvilke bruker dere ikke? (styrer hvilke tekster som lages. Har dere ikke LinkedIn, lager jeg ikke LinkedIn-poster)\n2. Poster dere som selskap eller som en navngitt person? (styrer om alle tekstene skrives i jeg-form eller vi-form, og hvor personlig de kan være)\n3. Er dere i en bransje med regler for hva markedsføringen kan påstå, for eksempel helse, finans, alkohol eller advokat? (styrer hvilke påstander som er lov å skrive i det hele tatt)\n\n**Nyttig, men ikke påkrevd:**\n\n4. Hvem skal lese det, og hva vil dere at de skal gjøre? (styrer vinklingen)\n5. Er det tall, kundenavn eller personer i grunnteksten som ikke er klarert for publisering? (styrer hva jeg utelater)\n6. Har dere en stilprofil jeg skal holde meg innenfor? (styrer tonen)\n7. Hvor ofte publiserer dere vanligvis? (styrer hvor mange tekster jeg lager. Ti tekster til noen som poster hver fjortende dag, er fem måneder med innhold)",
+        "eksempel_input": "Én sak du allerede har skrevet, for eksempel en kundehistorie:\n\n\"Nordvik Transport hadde 89 prosent leveringspresisjon da vi startet.\nAlle trodde det handlet om ruteplanlegging. Da vi målte, viste det seg\nat 70 prosent av forsinkelsene oppsto på lageret før bilen kjørte ut.\nEtter tre måneder med endret morgenrutine er de på 96 prosent.\nIngen ny programvare ble kjøpt.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Blir ikke alle innleggene like?",
+            "svar": "Det er nettopp det den er bygget for å unngå. Den starter med å plukke ut poengene i saken som kan stå alene, og lager ett innlegg per poeng i stedet for ti omskrivinger av det samme. Har saken bare to poeng, sier den det, i stedet for å strekke det til ti."
+          },
+          {
+            "sporsmal": "Hva om vi ikke er på alle kanalene?",
+            "svar": "Da lager den ikke tekster for dem. Den spør først hvilke kanaler dere faktisk bruker, og hvilke dere ikke bruker. Har dere ikke Instagram, får du ikke Instagram-tekster du må slette."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    POENGENE SOM KAN STÅ ALENE\n    1.\n\n    TEKSTENE, GRUPPERT PER KANAL BRUKEREN HAR\n    [kanal] ([antall])\n    1. ...\n\n    OPPFØLGINGSVINKLER (2)",
+        "det_den_ikke_gjor": "Den gjør ikke svakt innhold sterkt. Er grunnteksten uten poenger, blir alle ti innleggene like tynne, og da skal den si fra i stedet for å levere.\n\nDen vet ikke hva som er klarert å publisere om en kunde."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er artikkelen. Lag distribusjonspakken.",
+        "copilot-cowork": "Bruk skillen ‹Én sak, ti innlegg›. Her er artikkelen. Lag distribusjonspakken.",
+        "chatgpt-work": "Her er artikkelen. Lag distribusjonspakken."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/innlegg-til-sosiale-medier.zip",
+        "copilot-cowork": "copilot-cowork/innlegg-til-sosiale-medier.md",
+        "chatgpt-work": "chatgpt-work/innlegg-til-sosiale-medier.md"
+      }
+    },
+    {
+      "slug": "tilbud-sjekkliste",
+      "navn": "Kritikk av eget tilbud",
+      "kategori": "Salg",
+      "tilgang": "e-post",
+      "oppsummering": "Leser tilbudet ditt slik mottakeren gjør, enten det er en bedrift eller en privatperson, og sier hva som er uklart, hva som mangler og hvilke innvendinger som kommer.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "copilot-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Sjekkliste: hva mangler i tilbudet ditt",
+      "sokeord": "sjekkliste tilbud til kunde",
+      "sporsmal_h2": "Hva mangler i tilbudet jeg skal sende?",
+      "side": {
+        "tittel": "Sjekkliste: hva mangler i tilbudet ditt | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Leser tilbudet ditt slik mottakeren gjør, enten det er en bedrift eller en privatperson, og sier hva som er uklart, hva som mangler og hvilke innvendinger ",
+        "ingress": "Den som skrev tilbudet vet hva som menes. Kunden gjør ikke det. Det er der de fleste tilbud taper: ikke på pris, men på at noe var uklart nok til at kunden utsatte avgjørelsen.",
+        "hva_du_far": "Den som skrev tilbudet vet hva som menes. Kunden gjør ikke det. Det er der de fleste tilbud taper: ikke på pris, men på at noe var uklart nok til at kunden utsatte avgjørelsen.\n\nDenne skillen leser tilbudet slik en innkjøper gjør: leter etter det som kan koste dem penger senere, det som ikke er avgrenset, og det de må forsvare internt.",
+        "slik_bruker_du_den": "Lim inn tilbudet slik det står nå. Si hva slags kunde det går til og hvem som skal godkjenne det internt hos dem.\n\nGå gjennom innvendingene før du sender. Er du uenig i en av dem, er det uansett den samtalen du får.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Går tilbudet til en bedrift eller til en privatperson? (styrer hvem jeg leser som, og hvilke regler som gjelder. En innkjøper som må forsvare kjøpet internt, og et ektepar som skal pusse opp kjøkkenet, er to helt ulike lesere, og salg til privatpersoner har egne regler for pris, frister og angrerett som et bedriftstilbud ikke har)\n2. Hva er dere villige til å endre hvis kunden presser, og hva er dere ikke villige til å endre? (styrer om innvendingene jeg forbereder faktisk kan besvares, eller bare gjør deg nervøs)\n\n**Nyttig, men ikke påkrevd:**\n\n3. Hva består leveransen av, og hva er den vanligste kilden til uenighet i etterkant hos dere? (styrer hvor jeg leter hardest)\n4. Hvem hos kunden skal godkjenne dette? (styrer hvilke hull som er farligst)\n5. Har dere standardvilkår eller en avtalemal som ligger under? (styrer hva som ikke trenger stå i selve tilbudet)",
+        "eksempel_input": "Tilbudet du er i ferd med å sende, limt rett inn:\n\n\"Tilbud: Gjennomgang av logistikkprosesser\n\nVi tilbyr en helhetlig gjennomgang av deres logistikkprosesser med fokus\npå effektivisering og kostnadsreduksjon. Leveransen inkluderer kartlegging,\nanalyse og anbefalinger.\n\nPris: kr 180 000 eks. mva.\nOppstart etter avtale. Faktureres løpende.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hva ser den etter?",
+            "svar": "Det mottakeren lurer på og ikke får svar på. Hva som konkret leveres og når, hva som ikke er inkludert, hva det koster hvis det tar lengre tid, og hvem som gjør jobben. Den leser tilbudet som en som skal forsvare kjøpet internt, ikke som en som skrev det."
+          },
+          {
+            "sporsmal": "Gjelder den også når jeg selger til privatpersoner?",
+            "svar": "Ja, og den spør om det først, fordi det endrer hele lesningen. En innkjøper som må forsvare kjøpet i et ledermøte og et ektepar som skal pusse opp kjøkkenet, lurer på helt ulike ting. Den gir ikke juridiske råd i noen av tilfellene."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    DE TRE STØRSTE HULLENE\n    1. [sitat eller sted] · [hva som mangler] · [hva det koster deg]\n\n    ØVRIGE FUNN\n    - [kategori]: [funn]\n\n    INNVENDINGENE SOM KOMMER\n    1. Kunden sier: \"...\" → Svar: \"...\"\n\n    DEN ENE ENDRINGEN\n    [én setning]",
+        "det_den_ikke_gjor": "Den er ikke jurist og vurderer ikke avtalerettslig innhold. Den ser på om tilbudet er tydelig, ikke om det er juridisk holdbart.\n\nDen vet ikke hva markedet ditt tåler i pris."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er tilbudet jeg skal sende. Les det som en skeptisk innkjøper.",
+        "copilot-cowork": "Bruk skillen ‹Kritikk av eget tilbud›. Her er tilbudet jeg skal sende. Les det som en skeptisk innkjøper.",
+        "chatgpt-work": "Her er tilbudet jeg skal sende. Les det som en skeptisk innkjøper."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/tilbud-sjekkliste.zip",
+        "copilot-cowork": "copilot-cowork/tilbud-sjekkliste.md",
+        "chatgpt-work": "chatgpt-work/tilbud-sjekkliste.md"
+      }
+    },
+    {
+      "slug": "statusrapport-mal",
+      "navn": "Ukesstatus til ledergruppa",
+      "kategori": "Ledelse og møter",
+      "tilgang": "e-post",
+      "oppsummering": "Samler uka fra egne notater til en status som er like lang hver gang, og som sier hva som står stille.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork"
+      ],
+      "sidetittel": "Statusrapport-mal til ledergruppa",
+      "sokeord": "statusrapport mal",
+      "sporsmal_h2": "Hvordan skriver jeg en ukentlig statusrapport?",
+      "side": {
+        "tittel": "Statusrapport-mal til ledergruppa | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Samler uka fra egne notater til en status som er like lang hver gang, og som sier hva som står stille.",
+        "ingress": "Statusrapporter har to feil. De blir lange når det har skjedd mye og korte når det har skjedd lite, så leseren kan ikke sammenligne uker. Og de forteller hva som er gjort, ikke hva som står stille.",
+        "hva_du_far": "Statusrapporter har to feil. De blir lange når det har skjedd mye og korte når det har skjedd lite, så leseren kan ikke sammenligne uker. Og de forteller hva som er gjort, ikke hva som står stille.\n\nDenne skillen gir samme format hver uke, og tvinger fram det som har stoppet opp. Det er den eneste delen mottakeren egentlig kan gjøre noe med.",
+        "slik_bruker_du_den": "Lim inn det du har fra uka: kalenderen, notater, Slack-meldinger du sendte, oppgavelista. Rot er greit.\n\nHar du forrige ukes status, lim den inn også. Da kan den se hva som ikke har flyttet seg.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n**Bare første gang.** Har brukeren limt inn en statusprofil fra en tidligere uke, hopper du over hele dette intervjuet og går rett på notatene. Å intervjue noen på nytt hver mandag er den sikreste måten å få dem til å slutte å bruke en ukentlig skill.\n\n1. **Strukturbærende.** Hva er de tre til fem faste sporene dere følger? Kunder, prosjekter, salg, leveranser, rekruttering, drift. (styrer hele strukturen, som skal være lik hver uke. Uten faste spor kan ikke leseren sammenligne to uker, og da finnes det ingen status å lage. Får du ikke svar, foreslår du fire spor ut fra notatene og ber om et ja eller en korrigering. Du lager ikke statusen på gjettede spor)\n2. Hvem leser statusen, og hva bruker de den til? (styrer hva som tas med og hva som utelates)\n\n**Nyttig, men ikke påkrevd:**\n\n3. Er det tall dere alltid rapporterer, og hvor kommer de fra? (styrer tallbolken)\n4. Hvor mange av sporene har vanligvis reell framgang på én uke? (styrer hvor hardt jeg prioriterer når notatene inneholder mer enn det som får plass)\n5. Er det noe leseren ikke skal se i denne kanalen? (styrer hva jeg holder utenfor)\n6. Har du forrige ukes status? Lim den inn. (styrer «står stille»-delen, som er den eneste som viser hva som ikke har flyttet seg)",
+        "eksempel_input": "Notatene dine fra uka, slik de ligger:\n\nman: kickoff Nordvik, gikk fint. Kari vil ha ukentlig rapport\ntir: ingenting, syk\nons: purret Fjelltind på signatur, ikke svar. Tredje gang nå\nons: ansatt en til på lager, starter 1. okt\ntor: demo for Solvang flyttet til uke 39 (deres ønske)\nfre: fakturagrunnlag ferdig, 412' ut\nfre: Mats sa at serveren må byttes før nyttår, ca 90'",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Må jeg svare på spørsmålene hver uke?",
+            "svar": "Nei, bare første gang. Da lager den en statusprofil du kopierer inn neste uke, med hvilke spor du følger, hvem som leser og hvilke tall som skal med. Etter det er det bare å lime inn ukas notater. Det var den viktigste rettelsen vi gjorde i testingen."
+          },
+          {
+            "sporsmal": "Hva er poenget med «står stille»-delen?",
+            "svar": "At den er der. De fleste statusrapporter lister opp det som har skjedd, og da forsvinner det som ikke har skjedd. En sak som har stått stille i tre uker er som regel viktigere enn tre saker som beveget seg litt."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    UKE [nr]\n\n    FLYTTET SEG\n    - [sak]: [fra hva til hva]\n\n    STÅR STILLE\n    - [sak]: [hva som blokkerer] · [hvem som må gjøre noe]\n\n    TALL\n    - [bare det som finnes i notatene]\n\n    NESTE UKE\n    1.\n\n    STATUSPROFIL, KOPIER DENNE TIL NESTE UKE\n    Spor: / Lesere: / Tall fra: / Utelates:\n    Denne ukas status: [kort gjengivelse, brukes til å finne hva som står stille]",
+        "det_den_ikke_gjor": "Den kan ikke vite hva som er viktig i din organisasjon. Første gang bør du korrigere prioriteringen, og legge korrigeringen inn i instruksen.\n\nDen erstatter ikke en samtale om det som står stille."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er notatene mine fra uka. Lag ukesstatusen.",
+        "copilot-cowork": "Bruk skillen ‹Ukesstatus til ledergruppa›. Her er notatene mine fra uka. Lag ukesstatusen.",
+        "chatgpt-work": "Her er notatene mine fra uka. Lag ukesstatusen."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/statusrapport-mal.zip",
+        "copilot-cowork": "copilot-cowork/statusrapport-mal.md",
+        "chatgpt-work": "chatgpt-work/statusrapport-mal.md"
+      }
+    },
+    {
+      "slug": "kundeservice-svarmal",
+      "navn": "Svarbibliotek fra egne henvendelser",
+      "kategori": "Kundeservice",
+      "tilgang": "e-post",
+      "oppsummering": "Finner de spørsmålene som går igjen i innboksen din, og lager et godt svar på hvert av dem.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "copilot-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Svarmaler for spørsmålene som går igjen",
+      "sokeord": "svarmaler kundeservice",
+      "sporsmal_h2": "Hvordan lager jeg svarmaler for kundeservice?",
+      "side": {
+        "tittel": "Svarmaler for spørsmålene som går igjen | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Finner de spørsmålene som går igjen i innboksen din, og lager et godt svar på hvert av dem.",
+        "ingress": "I de fleste virksomheter er åtti prosent av kundehenvendelsene tjue varianter av det samme spørsmålet. Alle vet det, men ingen har tid til å sette seg ned og skrive ut svarene.",
+        "hva_du_far": "I de fleste virksomheter er åtti prosent av kundehenvendelsene tjue varianter av det samme spørsmålet. Alle vet det, men ingen har tid til å sette seg ned og skrive ut svarene.\n\nDenne skillen gjør jobben på én runde: den grupperer henvendelsene, finner det virkelige spørsmålet bak formuleringene, og skriver et svar per gruppe som kan brukes som det er eller tilpasses litt.\n\nDen finner også spørsmålene som kommer fordi noe er uklart et annet sted. De skal ikke besvares bedre, de skal fjernes.",
+        "slik_bruker_du_den": "Lim inn henvendelser fra innboksen, chatten eller skjemaet deres. Femti er nok, hundre er bedre. Fjern navn og personopplysninger før du limer inn.\n\nHar du svar dere allerede bruker, ta dem med. Da bygger den videre på det som finnes.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hva leverer dere, og hvem henvender seg til dere? (styrer hvordan henvendelsene grupperes)\n2. Hva er de faktiske tallene for pris, frister, garanti, åpningstider og leveringstid, eller hvor står de? Lim gjerne inn prislista. (styrer hvor mange ferdige svar du får. Gir du meg tallene, blir svarene klare til bruk. Sier du bare hvor de står, markerer jeg dem som noe du må fylle inn selv. Finner jeg dem ikke noe sted, dikter jeg dem ikke opp)\n3. Hvilken kanal kommer henvendelsene fra: e-post, chat, skjema eller telefon? (styrer formen på svarene. Et telefonsvar er en replikk på to setninger, ikke en e-posttekst)\n\n**Nyttig, men ikke påkrevd:**\n\n4. Hvem skal bruke svarene? (styrer hvor mye forklaring som legges ved hvert svar, se punkt 4 under)\n5. Hvilke ord bruker kundene om det dere selger, og hvilke bruker dere internt? (styrer språket i svarene)\n\nMinn brukeren om å fjerne navn og personopplysninger før de limer inn henvendelser.",
+        "eksempel_input": "Emnefeltene fra innboksen din de siste to ukene, kopiert rett ut:\n\nSpørsmål om levering\nNår kommer bestillingen min?\nFeil størrelse\nHvor lang leveringstid har dere?\nRetur\nBytte av vare - hvordan?\nSendingen har ikke kommet\nFaktura spørsmål\nKan jeg endre bestillingen?\nLeveringstid?\nRetur av vare kjøpt på salg\nHar dere åpent på lørdag",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hvordan vet den hvilke spørsmål som går igjen?",
+            "svar": "Den grupperer på hva folk faktisk lurer på, ikke på hvordan de formulerer det. «Når kommer bestillingen min», «leveringstid?» og «sendingen har ikke kommet» er tre formuleringer av to ulike spørsmål, og den skiller dem."
+          },
+          {
+            "sporsmal": "Hva er «bør fjernes, ikke besvares»?",
+            "svar": "Den delen folk pleier å bli overrasket over. Går det tjue henvendelser i måneden på leveringstid, er svaret ikke en bedre svarmal. Svaret er å skrive leveringstiden et sted folk ser den. Den sier hvor endringen bør gjøres, ikke bare hva du skal svare."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    DE VANLIGSTE SPØRSMÅLENE\n    1. [spørsmål] · [antall henvendelser]\n       Formuleringer: \"...\", \"...\"\n       Svar:\n       [tekst med [FYLL INN] der det trengs]\n\n    BØR FJERNES, IKKE BESVARES\n    - [spørsmål] · [hva som bør endres] · [hvor: nettside, skilt, SMS, tilbudsmal, telefonsvarer]\n\n    PASSET IKKE INN\n    - [restliste]",
+        "det_den_ikke_gjor": "Den kan ikke vite om svarene er riktige. Alt som gjelder pris, frister, garanti eller rettigheter må kontrolleres av noen som kan det før det brukes.\n\nDen håndterer ikke klager. Bruk «Svaret på den vanskelige e-posten» til det."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er de siste hundre henvendelsene våre. Bygg svarbiblioteket.",
+        "copilot-cowork": "Bruk skillen ‹Svarbibliotek fra egne henvendelser›. Her er de siste hundre henvendelsene våre. Bygg svarbiblioteket.",
+        "chatgpt-work": "Her er de siste hundre henvendelsene våre. Bygg svarbiblioteket."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/kundeservice-svarmal.zip",
+        "copilot-cowork": "copilot-cowork/kundeservice-svarmal.md",
+        "chatgpt-work": "chatgpt-work/kundeservice-svarmal.md"
+      }
+    },
+    {
+      "slug": "svare-pa-klage",
+      "navn": "Svaret på den vanskelige e-posten",
+      "kategori": "Kundeservice",
+      "tilgang": "e-post",
+      "oppsummering": "Gjør en klage eller en betent e-post om til tre svarutkast i ulik tone, som roer ned uten å love noe du ikke kan holde.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "copilot-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Svare på en klage: tre utkast i ulik tone",
+      "sokeord": "svare på klage fra kunde",
+      "sporsmal_h2": "Hvordan svarer jeg på en klage fra en kunde?",
+      "side": {
+        "tittel": "Svare på en klage: tre utkast i ulik tone | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Gjør en klage eller en betent e-post om til tre svarutkast i ulik tone, som roer ned uten å love noe du ikke kan holde.",
+        "ingress": "Den vanskelige e-posten blir liggende. Du utsetter, og ventetiden gjør saken verre enn den var.",
+        "hva_du_far": "Den vanskelige e-posten blir liggende. Du utsetter, og ventetiden gjør saken verre enn den var.\n\nDenne skillen får deg i gang på fem minutter. Den skiller det som faktisk er et krav fra det som er frustrasjon, sier hva du bør sjekke før du svarer, og gir tre utkast i ulik tone slik at du kan velge nivå.\n\nDen passer også på at du ikke lover noe i affekt.",
+        "slik_bruker_du_den": "Lim inn e-posten du har fått, og skriv i én setning hva som faktisk har skjedd sett fra din side. Ta med om noe er lovet tidligere.\n\nVelg utkast, les gjennom, og send det som deg selv. Ikke send noe du ikke ville sagt høyt.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hva er faktisk lovet denne personen, muntlig eller skriftlig? (styrer hva jeg kan skrive uten å love noe du må trekke tilbake)\n2. Hva kan du tilby, og hva kan du ikke tilby? Vær konkret. (styrer alle tre utkastene. Uten dette skriver jeg noe som høres imøtekommende ut og forplikter deg til noe du ikke kan holde)\n\n**Nyttig, men ikke påkrevd:**\n\n3. Hva er forholdet til denne personen? (styrer tonen)\n4. Hva skjedde egentlig, sett fra din side? (styrer hva som skal korrigeres i svaret)\n5. Er dette første gang, eller en gjenganger? (styrer hvor fast det faste utkastet skal være)\n6. Er det en avtale, frist eller et beløp involvert? (styrer om jeg skal anbefale at noen andre ser på saken først)",
+        "eksempel_input": "E-posten du har fått, limt rett inn:\n\n\"Dette er tredje gang jeg tar kontakt. Vi fikk beskjed om at leveransen\nskulle være på plass før ferien, og nå er det september. Kunden vår\nhar begynt å spørre hva som skjer, og jeg har ikke noe å si til dem.\nJeg forventer et konkret svar i dag, ellers må vi vurdere om vi skal\nfortsette dette samarbeidet.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hvorfor tre utkast og ikke ett?",
+            "svar": "Fordi valget av tone er ditt, ikke AI-ens. Den vet ikke om denne kunden er en du har hatt i ti år eller en du er i ferd med å miste uansett. Du får et nøkternt, et imøtekommende og et fast utkast, og en anbefaling med én setnings begrunnelse."
+          },
+          {
+            "sporsmal": "Kan den love noe på mine vegne?",
+            "svar": "Nei, og den spør deg først om hva som faktisk er lovet, muntlig eller skriftlig. Uten det svaret skriver den ikke. Det er den vanligste måten et velment svar på en klage gjør situasjonen verre: du lover noe for å roe ned, og så må du trekke det tilbake."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    HVA DE FAKTISK BER OM\n    HVA DU BØR SJEKKE FØRST\n\n    UTKAST 1, NØKTERNT\n    UTKAST 2, IMØTEKOMMENDE\n    UTKAST 3, FAST\n\n    ANBEFALING\n    [ett utkast, én setning begrunnelse]",
+        "det_den_ikke_gjor": "Den gir ikke juridiske råd. Gjelder saken erstatning, mangler eller oppsigelse av en avtale, skal en jurist se på det.\n\nDen kjenner ikke historikken deres. Er det en gjenganger, må du si det, ellers svarer den som om det er første gang."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er e-posten jeg har fått. Hjelp meg å svare.",
+        "copilot-cowork": "Bruk skillen ‹Svaret på den vanskelige e-posten›. Her er e-posten jeg har fått. Hjelp meg å svare.",
+        "chatgpt-work": "Her er e-posten jeg har fått. Hjelp meg å svare."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/svare-pa-klage.zip",
+        "copilot-cowork": "copilot-cowork/svare-pa-klage.md",
+        "chatgpt-work": "chatgpt-work/svare-pa-klage.md"
+      }
+    },
+    {
+      "slug": "kontrakt-sjekkliste",
+      "navn": "Gjennomlesing av avtale",
+      "kategori": "Økonomi og administrasjon",
+      "tilgang": "e-post",
+      "oppsummering": "Finner bindingstid, oppsigelse, prisjustering, ansvar og det som mangler i en avtale du skal signere. Ikke juridisk rådgivning.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork"
+      ],
+      "sidetittel": "Sjekkliste før du signerer en avtale",
+      "sokeord": "sjekkliste før signering av kontrakt",
+      "sporsmal_h2": "Hva bør jeg se etter før jeg signerer en avtale?",
+      "side": {
+        "tittel": "Sjekkliste før du signerer en avtale | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Finner bindingstid, oppsigelse, prisjustering, ansvar og det som mangler i en avtale du skal signere. Ikke juridisk rådgivning.",
+        "ingress": "De fleste leverandøravtaler blir signert uten at noen har lest dem ordentlig, fordi det tar tid og fordi språket er kjedelig. Så oppdager man bindingstiden når man vil ut.",
+        "hva_du_far": "De fleste leverandøravtaler blir signert uten at noen har lest dem ordentlig, fordi det tar tid og fordi språket er kjedelig. Så oppdager man bindingstiden når man vil ut.\n\nDenne skillen går gjennom avtalen på de punktene som faktisk koster penger, og sier hva som står, hvor det står, og hva som ikke står i det hele tatt.\n\nDen erstatter ikke en advokat. Den gjør at du vet hva du skal spørre advokaten om, og fanger de vanlige tingene før de blir dyre.",
+        "slik_bruker_du_den": "Lim inn avtalen, inkludert vedlegg og henvisninger til standardvilkår hvis du har dem. Si hvilken part du er.\n\nTa punktene under «Bør avklares før signering» med tilbake til motparten. Det er en normal del av en forhandling.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hvilken part er du i denne avtalen, og kjøper eller selger du? (styrer hele analysen. En ansvarsbegrensning er en fordel for den ene parten og en risiko for den andre) **Dette må du si med egne ord.** At avtalen navngir to parter forteller meg ikke hvilken av dem du er, og jeg gjetter ikke på det.\n2. Hva er det du kjøper eller selger: en vare, en tjeneste, et abonnement, en leveranse over tid, eller en kombinasjon? (styrer hvilke punkter som sjekkes, og hvilke som droppes. En varekontrakt og en tjenestekontrakt har nesten ikke overlappende risikopunkter) **Også dette må du si selv**, selv om det går fram av avtaleteksten.\n\n**Nyttig, men ikke påkrevd:**\n\n3. Hva er avtalt muntlig eller i e-post som du forventer å finne igjen i teksten? (styrer letingen etter det vanligste problemet: det som ble lovet i møtet og ikke står i avtalen)\n4. Hvor viktig er denne leveransen for driften deres? (styrer hvor strengt jeg leser)\n5. Har dere egne innkjøpsbetingelser eller krav fra en eier som avtalen må ligge innenfor? (styrer hva jeg flagger som avvik)",
+        "eksempel_input": "Avtalen du skal signere, eller de punktene du er usikker på:\n\n\"§ 4 Varighet\nAvtalen løper i 36 måneder fra oppstartsdato og fornyes automatisk\nmed 12 måneder om gangen med mindre den sies opp skriftlig senest\n6 måneder før utløp.\n\n§ 7 Prisregulering\nLeverandøren kan årlig justere prisene i henhold til konsumprisindeksen,\nsamt for øvrige kostnadsøkninger utenfor leverandørens kontroll.\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Er dette juridisk rådgivning?",
+            "svar": "Nei, og skillen sier det selv øverst i svaret. Den peker på hva som står, hvor det står, og hva som ikke står. Den nevner aldri en lov, en paragraf eller en tallgrense, fordi det er akkurat der en AI tar feil på en måte som ser overbevisende ut. Er beløpet stort, snakk med en advokat."
+          },
+          {
+            "sporsmal": "Hvorfor må jeg si om jeg er kjøper eller selger?",
+            "svar": "Fordi den samme setningen er en fordel for den ene og en risiko for den andre. En ansvarsbegrensning beskytter leverandøren og eksponerer kunden. At avtalen navngir to parter forteller ikke hvilken av dem du er, og den gjetter ikke."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    [ansvarsfraskrivelse]\n\n    KORT OPPSUMMERT\n    Er brukeren kjøper: [hva du binder deg til, hvor lenge, hva det koster å komme ut]\n    Er brukeren selger: [hva du har forpliktet deg til å levere, hva du hefter for hvis det svikter, og hva du får betalt når]\n    Bruk bare den varianten som gjelder.\n\n    PUNKT FOR PUNKT\n    Varighet og binding: [sitat + hvor] eller IKKE REGULERT\n    ...\n\n    DETTE ER UVANLIG\n    DETTE STÅR IKKE\n    BØR AVKLARES FØR SIGNERING",
+        "det_den_ikke_gjor": "Den er ikke juridisk rådgivning, og den kjenner ikke rettspraksis eller bransjestandarden i ditt marked.\n\nDen ser bare det du limer inn. Henviser avtalen til standardvilkår du ikke har med, er gjennomgangen ufullstendig, og da sier den fra."
+      },
+      "startprompt": {
+        "claude-cowork": "Her er en avtale jeg skal signere. Gå gjennom den for meg.",
+        "copilot-cowork": "Bruk skillen ‹Gjennomlesing av avtale›. Her er en avtale jeg skal signere. Gå gjennom den for meg.",
+        "chatgpt-work": "Her er en avtale jeg skal signere. Gå gjennom den for meg."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/kontrakt-sjekkliste.zip",
+        "copilot-cowork": "copilot-cowork/kontrakt-sjekkliste.md",
+        "chatgpt-work": "chatgpt-work/kontrakt-sjekkliste.md"
+      }
+    },
+    {
+      "slug": "stillingsannonse-mal",
+      "navn": "Stillingsannonsen som treffer",
+      "kategori": "HR og folk",
+      "tilgang": "e-post",
+      "oppsummering": "Skriver en stillingsannonse som beskriver jobben slik den faktisk er, uten «dyktig og engasjert».",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "chatgpt-work"
+      ],
+      "sidetittel": "Stillingsannonse-mal uten floskler",
+      "sokeord": "stillingsannonse mal",
+      "sporsmal_h2": "Hvordan skriver jeg en stillingsannonse som treffer?",
+      "side": {
+        "tittel": "Stillingsannonse-mal uten floskler | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Skriver en stillingsannonse som beskriver jobben slik den faktisk er, uten «dyktig og engasjert».",
+        "ingress": "Stillingsannonser ligner på hverandre fordi de er skrevet for å ikke støte noen bort. Resultatet er at de heller ikke tiltrekker noen, og at du får hundre søknader fra folk som ikke passer.",
+        "hva_du_far": "Stillingsannonser ligner på hverandre fordi de er skrevet for å ikke støte noen bort. Resultatet er at de heller ikke tiltrekker noen, og at du får hundre søknader fra folk som ikke passer.\n\nDenne skillen gjør det motsatte. Den beskriver hva personen faktisk skal gjøre den første måneden, hva som er vanskelig med jobben, og hvem den ikke passer for. Det gir færre søkere og bedre treff.",
+        "slik_bruker_du_den": "Skriv det du vet: rollen, hvem den rapporterer til, hva som er den viktigste oppgaven, hva slags virksomhet dere er. Ufullstendig er greit, den spør om resten.\n\nSvar ærlig på spørsmålene den stiller, særlig det om hva som er vanskelig. Det er den delen som gjør annonsen troverdig.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hva skal personen gjøre den første måneden, helt konkret? (styrer hele annonsen. Dette erstatter den generiske ansvarslista som gjør at annonser ligner på hverandre)\n2. Hva er vanskelig eller slitsomt med denne jobben? (styrer avsnittet som gjør annonsen troverdig, og som filtrerer bort feil søkere før de søker)\n\nSpørsmål to er det de fleste vegrer seg for, og det som virker best. Blir det avfeid, følger du den vanlige opptrappingen over. Blir det stående ubesvart til slutt, faller to seksjoner bort: DETTE ER VANSKELIG og DETTE PASSER IKKE FOR DEG SOM. Si det, og lever resten uten dem. Ikke dikt opp et svar for å fylle malen.\n\n**Nyttig, men ikke påkrevd:**\n\n3. Hva slags virksomhet er dere, hvor mange er dere, og hvor holder dere til? (styrer om-oss-avsnittet)\n4. Hvem jobber de tettest med, og hvem rapporterer de til? (styrer hvordan rollen plasseres)\n5. Hva skiller en som lykkes fra en som ikke gjør det i denne rollen? (styrer kravlista)\n6. Kan lønn oppgis, og hvor gjøres arbeidet fra? (styrer betingelsesavsnittet)",
+        "eksempel_input": "Det lederen sender deg når stillingen skal ut, ordrett:\n\n\"Vi trenger en til på lager. Skal kunne kjøre truck, helst ha erfaring\nmed WMS. Blir mye samarbeid med sjåførene. Turnus, men vi er fleksible.\nSkriv noe fint, du vet hvordan det skal se ut. Haster litt, kan vi få\nden ut denne uka?\"",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hvorfor spør den hva personen skal gjøre den første måneden?",
+            "svar": "Fordi det er spørsmålet som skiller en annonse fra alle andre annonser. «Ansvar for daglig drift» kunne stått i hvilken som helst utlysning. «Første måneden overtar du morgenrutinen på lageret sammen med Tone» kunne bare stått i denne. Den generiske ansvarslista er grunnen til at annonser ligner på hverandre."
+          },
+          {
+            "sporsmal": "Hva er «dette passer ikke for deg som»?",
+            "svar": "En kort, ærlig del om hvem jobben ikke passer for. Den frarøver deg noen søkere og sparer deg for flere intervjuer. De som fortsatt søker etter å ha lest den, vet hva de går til."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    [Tittel]\n\n    JOBBEN\n    DEN FØRSTE MÅNEDEN\n    DETTE ER VANSKELIG\n    DU MÅ HA\n    DET ER FINT OM DU HAR\n    DETTE PASSER IKKE FOR DEG SOM\n    OM OSS (maks 60 ord)\n    LØNN OG BETINGELSER\n    SLIK ER PROSESSEN\n\n    Alternative titler: 1. 2. 3.",
+        "det_den_ikke_gjor": "Den kjenner ikke lønnsnivået i ditt marked, og den vet ikke hva som er lovlig å kreve i din bransje eller ditt land.\n\nDen erstatter ikke en samtale med den som skal være leder for rollen. Skriver du annonsen alene, blir den ofte feil."
+      },
+      "startprompt": {
+        "claude-cowork": "Vi skal ansette. Her er det jeg vet om rollen.",
+        "copilot-cowork": "Bruk skillen ‹Stillingsannonsen som treffer›. Vi skal ansette. Her er det jeg vet om rollen.",
+        "chatgpt-work": "Vi skal ansette. Her er det jeg vet om rollen."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/stillingsannonse-mal.zip",
+        "copilot-cowork": "copilot-cowork/stillingsannonse-mal.md",
+        "chatgpt-work": "chatgpt-work/stillingsannonse-mal.md"
+      }
+    },
+    {
+      "slug": "onboarding-plan-mal",
+      "navn": "Onboarding-plan for nyansatt",
+      "kategori": "HR og folk",
+      "tilgang": "e-post",
+      "oppsummering": "Lager en plan for de første tretti dagene, med hvem den nye skal snakke med, når, og hva de skal kunne til slutt.",
+      "versjon": "1.0",
+      "sist_testet": "2026-09-05",
+      "beste_paa": [
+        "claude-cowork",
+        "copilot-cowork"
+      ],
+      "sidetittel": "Onboarding-plan for nyansatt: 30 dager",
+      "sokeord": "onboarding plan nyansatt",
+      "sporsmal_h2": "Hvordan lager jeg en onboarding-plan for en nyansatt?",
+      "side": {
+        "tittel": "Onboarding-plan for nyansatt: 30 dager | Gratis AI-skill fra Tind Studio",
+        "metabeskrivelse": "Lager en plan for de første tretti dagene, med hvem den nye skal snakke med, når, og hva de skal kunne til slutt.",
+        "ingress": "Onboarding er som regel en god første dag og så ingenting. Den nye finner ut av ting selv, bruker tre måneder på det som kunne tatt tre uker, og tør ikke spørre etter uke to.",
+        "hva_du_far": "Onboarding er som regel en god første dag og så ingenting. Den nye finner ut av ting selv, bruker tre måneder på det som kunne tatt tre uker, og tør ikke spørre etter uke to.\n\nDenne skillen lager en plan med tre ting de fleste planer mangler: navngitte samtaler med dato, en liten oppgave som leveres tidlig, og et sjekkpunkt der lederen faktisk må vurdere om det går bra.",
+        "slik_bruker_du_den": "Fortell hvem som er ansatt, i hvilken rolle, hvem de jobber med, og hva de skal kunne gjøre alene etter en måned. Si også hva som pleier å gå galt hos dere.\n\nSend planen til den nye på forhånd. Det er halve verdien.",
+        "sporsmalene_den_stiller": "**Må besvares før du leverer noe:**\n\n1. Hva skal personen klare alene etter tretti dager? (styrer alle ukesmålene. Uten dette blir planen en liste over møter i stedet for en opplæring)\n2. Hvem jobber de tettest med? Be om navn og funksjon, ikke bare avdeling. (styrer samtalene i planen. Uten navn blir det en sjekkliste ingen føler ansvar for)\n3. Er det noe som lovpålagt eller etter interne krav må være på plass før personen kan jobbe selvstendig? Politiattest, taushetserklæring, sertifikat, HMS- eller brannkurs, verneutstyr, medisinkurs, førerkortklasse. (styrer hva som må ligge før første dag og hva som sperrer «alene» i planen. Dette kan jeg umulig gjette, og en plan som lar noen jobbe alene for tidlig er verre enn ingen plan)\n4. Hvordan er arbeidstiden: fast dagtid, turnus, skift eller sesong? (styrer når sjekkpunktene legges, og hva «uke 1» faktisk betyr. I turnus kan uke 1 være to vakter, og et fast fredagsmøte treffer en dag personen har fri)\n\n**Nyttig, men ikke påkrevd:**\n\n5. Hva slags virksomhet er dere, hvor mange er dere, og hvordan er dere organisert? (styrer omfanget av planen)\n6. Hvilke systemer og tilganger trenger de, og hvem bestiller dem? (styrer lista over ting som må gjøres før første dag)\n7. Hva pleier å gå galt for nye hos dere? (styrer hva sjekkpunktene spør om. Vet du det ikke, tenk på hva forrige nyansatte brukte lengst tid på å forstå)",
+        "eksempel_input": "Det du vet om den nyansatte, i stikkord:\n\nNy lagermedarbeider, starter 1. oktober\nTurnus, jobber annenhver helg\nSkal etter hvert kunne kjøre truck alene og ta imot inngående last\nHar truckførerbevis fra før, men vi må sjekke at det er gyldig\nTone er nærmeste leder, Mats kjenner rutinene best\nVi har ingen skriftlig opplæringsplan i dag",
+        "vanlige_sporsmal": [
+          {
+            "sporsmal": "Hva om den nyansatte jobber turnus og ikke mandag til fredag?",
+            "svar": "Da legges sjekkpunktene på vakter, ikke på ukedager. Den spør om arbeidstiden først, fordi en plan som sier «gjennomgang hver fredag» er ubrukelig for en som jobber annenhver helg. Det var en av rettelsene som kom ut av testingen."
+          },
+          {
+            "sporsmal": "Tar den hensyn til krav om attester og kurs?",
+            "svar": "Ja, den spør om det, og oppgaver som krever politiattest, kurs eller sertifikat blir liggende sperret til det er på plass. En plan som setter en nyansatt til å jobbe alene før papirene er i orden, er ikke en plan, den er en risiko."
+          }
+        ],
+        "slik_ser_resultatet_ut": "    MÅ VÆRE PÅ PLASS FØR SELVSTENDIG ARBEID\n    - [krav, attest, kurs, sertifikat] · [hvem skaffer det] · [frist]\n\n    FØR FØRSTE DAG\n    - [tilgang/utstyr] · [ansvarlig] · [frist]\n\n    UKE 1 til UKE 4\n    Mål denne uka:\n    Samtaler: [navn] · [formål] · [når]\n    Skal leveres:\n    Sjekkpunkt [dag eller vakt personen er på jobb]: [tre spørsmål lederen stiller]\n\n    ETTER TRETTI DAGER SKAL DU KUNNE\n    1.\n\n    DETTE FORVENTES IKKE ENNÅ\n    -",
+        "det_den_ikke_gjor": "Den kjenner ikke kulturen deres, og den vet ikke hvem som er god å snakke med internt. Navnene må du sette inn.\n\nDen erstatter ikke at lederen faktisk gjennomfører sjekkpunktene. En plan som ikke følges er verre enn ingen plan, fordi den nye ser at den ble laget."
+      },
+      "startprompt": {
+        "claude-cowork": "Vi har ansatt noen. Lag onboarding-planen for de første tretti dagene.",
+        "copilot-cowork": "Bruk skillen ‹Onboarding-plan for nyansatt›. Vi har ansatt noen. Lag onboarding-planen for de første tretti dagene.",
+        "chatgpt-work": "Vi har ansatt noen. Lag onboarding-planen for de første tretti dagene."
+      },
+      "nedlasting": {
+        "claude-cowork": "claude-cowork/onboarding-plan-mal.zip",
+        "copilot-cowork": "copilot-cowork/onboarding-plan-mal.md",
+        "chatgpt-work": "chatgpt-work/onboarding-plan-mal.md"
+      }
+    }
+  ]
+}
